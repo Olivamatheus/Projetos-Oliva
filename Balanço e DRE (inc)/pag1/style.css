@@ -1,0 +1,267 @@
+
+:root {
+    --cor0: #78d1ac;
+    --cor1: #8AFECE;
+    --cor2: #325446;
+    --cor4: #378b4e;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+
+body, ul, li, p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 100vw;
+    background: linear-gradient(rgba(0, 0, 0, 0.215), rgba(0, 0, 0, 0.703)), url("../img/Wallpaperp2G.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+main {
+    min-height: 100vh;
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor1);
+}
+
+.header {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    opacity: 75%;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+}
+
+.line1 {
+    text-align: center;
+}
+
+.line2 {
+    display: grid;
+    justify-content: center;
+}
+
+.line1 h1 {
+    color: white;
+    font-size: 3.0rem;
+    margin: 40px 50px 120px;
+}
+
+.line1 img {
+    margin-top: 80px;
+    width: 350px;
+    opacity: 70%;
+}
+
+.table {
+    background-color: rgba(231, 255, 233, 0.889);
+    opacity: 95%;
+    width: 400px;
+    height: 700px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.headertab p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 0.6em;
+    text-align: justify;
+    margin: 15px;
+    padding-top: 10px;
+}
+
+.table1 {
+    margin-left: 25px;
+}
+
+.table2 {
+    margin-left: 80px;
+}
+
+tr th {
+    font-size: 0.6em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    text-align: justify;
+}
+
+td p {
+    font-size: 0.5em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
+}
+
+td input {
+    width: 70px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 0.5em;
+    margin: 0 5px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1455px){
+    body {
+        min-height: 100vh;
+        max-width: 100vw;
+        background: linear-gradient(rgba(0, 0, 0, 0.215), rgba(0, 0, 0, 0.703)), url("../img/wallpapermed.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .line1 h1 {
+        color: white;
+        font-size: 2.0rem;
+        margin: 40px 50px 60px;
+    }
+
+    .line1 img {
+        margin-top: 50px;
+        width: 350px;
+        opacity: 70%;
+    }
+
+    .table {
+        background-color: rgba(231, 255, 233, 0.889);
+        opacity: 95%;
+        width: 300px;
+        height: 590px;
+        justify-content: center;
+    }
+
+   .table1, .table2 {
+        width: 250px;
+    }
+
+    .table1{
+        margin-left: 30px;
+    }
+
+    .table2 {
+        margin-left: 40px;
+    }
+
+    td input {
+        width: 40px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 0.4em;
+        margin: 0 5px;
+        text-align: center;
+    }
+
+    td p {
+        font-size: 0.4em;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .headertab p {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 0.5em;
+        text-align: justify;
+        margin: 5px;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        min-height: 100vh;
+        max-width: 100vw;
+        background: linear-gradient(rgba(0, 0, 0, 0.215), rgba(0, 0, 0, 0.703)), url("../img/wallpapermob.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }   
+
+    main {
+        min-height: 100vh;
+        max-width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .line1 h1 {
+        color: white;
+        font-size: 2.0rem;
+        margin: 20px 10px 20px;
+    }
+
+    .line1 img {
+        margin-top: 5px;
+        width: 170px;
+        opacity: 70%;
+    }
+
+    .table {
+        width: 350px;
+        height: 590px;
+        justify-content: center;
+}
+}
+
+@media screen and (max-width: 730px){
+    body {
+        min-height: 100vh;
+        max-width: 100vw;
+        background: linear-gradient(rgba(0, 0, 0, 0.215), rgba(0, 0, 0, 0.703)), url("../img/wallpapermob.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }   
+
+    main {
+        min-height: 100vh;
+        max-width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .line1 h1 {
+        color: white;
+        font-size: 1.5rem;
+        position: relative;
+        margin: 20px 10px 20px;
+    }
+
+    .line1 img {
+        margin-top: 5px;
+        width: 170px;
+        opacity: 70%;
+    }
+
+    .table {
+        width: 350px;
+        height: 590px;
+        justify-content: center;
+    }
+}
